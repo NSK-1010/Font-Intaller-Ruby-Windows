@@ -10,11 +10,9 @@ Font InstallerのRuby版です。
 ## 実行方法
 管理者権限で実行してください。
 
-sudoなどでもいいです。
-
-```sh
+```cmd
 bundle install
-ruby ./install.rb [フォント名]
+ruby install.rb [フォント名]
 ```
 
 ## 依存関係
@@ -22,7 +20,7 @@ ruby ./install.rb [フォント名]
 - Ruby<br>[Rubyのホームページはこちら](https://www.ruby-lang.org/)
 
 - bundler(Rubyライブラリ)
-```sh
+```cmd
 gem install 'bundler'
 ```
 ## お願い
