@@ -10,11 +10,9 @@ The Ruby version of the Font Installer.
 ## How to run
 Run it with administrative privileges.
 
-You can also use sudo.
-
-```sh
+```cmd
 bundle install
-ruby ./install.rb [font name]
+ruby install.rb [font name]
 ````
 
 ## Dependency
@@ -23,7 +21,7 @@ ruby ./install.rb [font name]
 
 - bundler(Ruby Library)
 
-```sh
+```cmd
 gem install 'bundler'
 ```
 
