@@ -2,10 +2,9 @@
 require 'Fileutils'
 require 'zip'
 require 'open-uri'
-require_relative './utils/font'
+require_relative 'utils\font'
 
-$allfile = "/*"
-$installdir = '/usr/share/fonts/#{fontname}'
+$installdir = %q[C:\Windows\Fonts\]
 
 def download_unzip
   FileUtils.mkdir(fontname)
@@ -30,7 +29,7 @@ end
 
 def file
   FileUtils.mkdir_p(installdir + fontname)
-  FileUtils.mv(expanddir + "/*", installdir + fontname)
+  FileUtils.mv(expanddir + %q[\*], installdir + fontname)
   FileUtils.rm_r(fontname)
   FileUtils.rm(zipname)
 end
@@ -38,7 +37,7 @@ end
 def help
   puts "Font Installer Help"
   puts "Execution Method"
-  puts "ruby ./install.rb [fontname]"
+  puts "ruby install.rb [fontname]"
   fontlist
   puts "If you need help, please run it with the word '--help'."
   puts "You don't need to enter the font name when you run it with the word '--help'."
