@@ -28,8 +28,7 @@ def download_unzip
 end
 
 def file
-  FileUtils.mkdir_p(installdir + fontname)
-  FileUtils.mv(expanddir + %q[\*], installdir + fontname)
+  FileUtils.mv(expanddir + %q[\*], installdir)
   FileUtils.rm_r(fontname)
   FileUtils.rm(zipname)
 end
