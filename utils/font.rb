@@ -16,12 +16,12 @@ if font == "inter" then
   $zipname = "roboto-mono.zip"
   $downloadfile = "https://fonts.google.com/download?family=Roboto+Mono"
   $fontname = "Roboto_Mono"
-  $expanddir = "Roboto_Mono/static"
+  $expanddir = %q[Roboto_Mono\static]
 elsif font == "roboto-mono" then
   $zipname = "inter.zip"
   $downloadfile = "https://fonts.google.com/download?family=Inter"
   $fontname = "Inter"
-  $expanddir = "Inter/static"
+  $expanddir = %q[Inter\static]
 elsif font == "open-sans" then
   $zipname = "open-sans.zip"
   $downloadfile = "https://fonts.google.com/download?family=Open+Sans"
@@ -41,20 +41,20 @@ elsif font == "poppins" then
   $zipname = "poppins.zip"
   $downloadfile = "https://fonts.google.com/download?family=Poppins"
   $fontname = "Poppins"
-  $expanddir = "Poppins/static"
+  $expanddir = %q[Poppins\static]
 elsif font == "pt-sans" then
   $zipname = "pt-sans.zip"
   $downloadfile = "https://fonts.google.com/download?family=PT+Sans"
   $fontname = "PT_Sans"
-  $expanddir = "PT_Sans/static"
+  $expanddir = %q[PT_Sans\static]
 elsif font == "merriweather" then
   $zipname = "merriweather.zip"
   $downloadfile = "https://fonts.google.com/download?family=Merriweather"
   $fontname = "Merriweather"
-  $expanddir = "Merriweather/static"
+  $expanddir = %q[Merriweather\static]
 elsif font === "jost" then
   $zipname = "jost.zip"
   $downloadfile = "https://fonts.google.com/download?family=Jost"
   $fontname = "Jost"
-  $expanddir = "Jost/static"
+  $expanddir = %q[Jost\static]
 end
